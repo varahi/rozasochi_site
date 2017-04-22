@@ -1,0 +1,37 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+	xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+	xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+	<f:layout name="Content" />
+
+	<f:section name="Configuration">
+  	<flux:form id="singlemap" options="{group: 'FCE'}">
+			<flux:field.input name="singlemap.title" label="{f:translate(key: 'flux.singlemap.title', extensionName: 'rozasochi_site')}" />
+			<flux:field.input name="singlemap.category" label="{f:translate(key: 'flux.singlemap.category', extensionName: 'rozasochi_site')}" />
+      <flux:field.text name="singlemap.text" enableRichText="1" rows="4" label="{f:translate(key: 'flux.singlemap.text', extensionName: 'rozasochi_site')}"/>          
+      <flux:field.input name="singlemap.lat" label="{f:translate(key: 'flux.singlemap.lat', extensionName: 'rozasochi_site')}" />
+      <flux:field.input name="singlemap.lng" label="{f:translate(key: 'flux.singlemap.lng', extensionName: 'rozasochi_site')}" />
+			<flux:field.file name="singlemap.image" allowed="jpg,png,jpeg,gif" showThumbnails="1" label="{f:translate(key: 'flux.singlemap.image', extensionName: 'rozasochi_site')}"/>
+    </flux:form>
+	</f:section>
+
+	<f:section name="Preview">
+
+	</f:section>
+
+	<f:section name="Main">
+	
+	<div class="row"> 
+		<div class="col-md-8"> 
+			<h1>{singlemap.title}</h1>					 
+			<h2>{singlemap.category}</h2>					 
+			<div class="object-description"> 
+				<f:format.html>{singlemap.text}</f:format.html>
+			</div>
+		</div>			 
+		<div class="col-md-4"> </div>
+	</div>
+	
+	</f:section>
+</div>

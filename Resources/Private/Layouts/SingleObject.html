@@ -1,0 +1,12 @@
+<f:layout name="SingleObject" />
+<f:render partial="Header" />
+<f:render partial="AnchorMenu" arguments="{_all}" />
+<div class="container content">
+	<f:cObject typoscriptObjectPath="lib.showObject" /> 
+	<f:render section="Main" />
+</div>
+
+<div style="display:none;" class="nav_up nav_up-single" id="nav_up"></div>
+<!-- <div style="display:none;" class="nav_down nav_down-single" id="nav_down"></div> -->
+
+<f:render partial="Footer" />

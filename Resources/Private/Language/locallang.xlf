@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-04-20T17:18:32Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="dce.content.facebook">
+			<source>Facebook</source>
+		</trans-unit>
+		<trans-unit id="dce.content.google">
+			<source>Google</source>
+		</trans-unit>
+		<trans-unit id="dce.content.instagram">
+			<source>Instagram</source>
+		</trans-unit>
+		<trans-unit id="dce.content.odnoklassniki">
+			<source>Odnoklassniki</source>
+		</trans-unit>
+		<trans-unit id="dce.content.vk">
+			<source>VK</source>
+		</trans-unit>
+		<trans-unit id="flux.blank">
+			<source>Blank page</source>
+		</trans-unit>
+		<trans-unit id="flux.blank.description">
+			<source>Blank page for resource data</source>
+		</trans-unit>
+		<trans-unit id="flux.content_area">
+			<source>Content Area</source>
+		</trans-unit>
+		<trans-unit id="flux.default">
+			<source>Default page</source>
+		</trans-unit>
+		<trans-unit id="flux.default.description">
+			<source>Default page</source>
+		</trans-unit>
+		<trans-unit id="flux.singlemap">
+			<source>Single Map</source>
+		</trans-unit>
+		<trans-unit id="flux.singlemap.category">
+			<source>Category</source>
+		</trans-unit>
+		<trans-unit id="flux.singlemap.description">
+			<source>Single Map for object</source>
+		</trans-unit>
+		<trans-unit id="flux.singlemap.image">
+			<source>Image</source>
+		</trans-unit>
+		<trans-unit id="flux.singlemap.lat">
+			<source>Latitude</source>
+		</trans-unit>
+		<trans-unit id="flux.singlemap.lng">
+			<source>Longitude</source>
+		</trans-unit>
+		<trans-unit id="flux.singlemap.text">
+			<source>Text</source>
+		</trans-unit>
+		<trans-unit id="flux.singlemap.title">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="flux.singleobject">
+			<source>Single object page</source>
+		</trans-unit>
+		<trans-unit id="flux.singleobject.description">
+			<source>Single object page</source>
+		</trans-unit>
+		<trans-unit id="flux.standard">
+			<source>Example page</source>
+		</trans-unit>
+		<trans-unit id="flux.standard.description">
+			<source>Description can be entered in LLL file locallang.xlf of extension test</source>
+		</trans-unit>
+		<trans-unit id="page.history_back">
+			<source>History back link</source>
+		</trans-unit>		
+		</body>
+	</file>
+</xliff>

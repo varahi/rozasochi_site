@@ -1,0 +1,104 @@
+/* Feedback form */
+.feedback-block {
+	position: relative;
+	top: 15px;
+}
+.feedback-block .tx-powermail {
+  max-width: 630px;
+  margin: 0 auto;
+}
+.tx-powermail h3,
+.tx-powermail h2,
+.tx-powermail .powermail_legend {
+  display: none;
+}
+.tx-powermail .layout1 {
+  width: 50%;
+  float: left;
+}
+.tx-powermail .layout2 {
+  width: 50%;
+  float: right;
+}
+.tx-powermail label {
+  display: block;
+  font-weight: 600;
+  color: #42929d;
+}
+.tx-powermail input[type="text"],
+.tx-powermail input[type="email"],
+.tx-powermail select {
+  width: 298px;
+  height: 30px;
+  border: 1px solid #42929d;
+  margin-bottom: 20px;
+}
+.tx-powermail select {
+	background: #fff;
+}
+.tx-powermail textarea {
+  width: 298px;
+  height: 124px;
+  border: 1px solid #0094d9;
+}
+input.powermail_captcha {
+  width: 105px !important;
+  float: left;
+}
+img.powermail_captchaimage {
+  float: right;
+  margin-right: 14px;
+}
+span.mandatory {
+  color: #87c64e;
+  font-size: 18px;
+}
+.powermail_fieldset_4,
+.powermail_fieldset_7,
+.powermail_fieldset_11 {
+  clear: both;
+}
+.tx-powermail input[type="submit"] {
+  font-size: 16px;
+  border: 2px solid #ACD09D;
+  display: block;
+  width: 163px;
+  height: 30px;
+  text-align: center;
+  color: #ACD09D;
+  text-decoration: none;
+  padding: 0 0 0 0; 
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; 
+  background: #f0f4f7;
+  margin: 0 auto;
+  margin-top: 30px;  
+}
+.tx-powermail input[type="submit"]:hover {
+  background: #ACD09D;
+  color: #fff;
+}
+
+ul.parsley-errors-list {
+  padding: 0;
+}
+li.parsley-required,
+li.parsley-custom-error-message {
+  position: absolute;
+  margin-top: -17px;
+  list-style: none;
+  color: #ff0000;
+  font-size: 12px;
+  background: none !important;
+  padding-left: 0 !important;
+}
+
+
+.order-form {
+	color: #42929D;
+	margin-top: 30px;
+	width: 300px;
+	margin: 0 auto;
+}

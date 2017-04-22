@@ -1,0 +1,60 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+	<div class="additional-info">
+	<f:if condition="{field.title}">
+		<h2 class="additional-info" id="additional-info">{field.title}</h2>
+	</f:if>
+	
+	<f:if condition="{field.vkLink}">
+		<div class="single-info__label">
+			{f:translate(key: 'dce.content.vk', extensionName: 'rozasochi_site')}:
+		</div>
+		<div class="single-info__value">
+			<f:link.external uri="{field.vkLink}" target="_blank">{field.vkLink}</f:link.external>
+		</div>
+	</f:if>	
+	
+	<f:if condition="{field.imLink}">
+		<div class="single-info__label">
+			{f:translate(key: 'dce.content.instagram', extensionName: 'rozasochi_site')}:
+		</div>
+		<div class="single-info__value">
+			<f:link.external uri="https://www.instagram.com/{field.imLink}" target="_blank">@{field.imLink}</f:link.external>
+		</div>	
+	</f:if>
+	
+	<f:if condition="{field.fbLink}">
+		<div class="single-info__label">
+			{f:translate(key: 'dce.content.facebook', extensionName: 'rozasochi_site')}:
+		</div>
+		<div class="single-info__value">
+			<f:link.external uri="{field.fbLink}" target="_blank">{field.fbLink}</f:link.external>
+		</div>	
+	</f:if>	
+	
+	<f:if condition="{field.okLink}">
+		<div class="single-info__label">
+			{f:translate(key: 'dce.content.odnoklassniki', extensionName: 'rozasochi_site')}:
+		</div>
+		<div class="single-info__value">
+			<f:link.external uri="{field.okLink}" target="_blank">{field.okLink}</f:link.external>
+		</div>		
+	</f:if>	
+	
+	<f:if condition="{field.googleLink}">
+		<div class="single-info__label">
+			{f:translate(key: 'dce.content.google', extensionName: 'rozasochi_site')}:
+		</div>
+		<div class="single-info__value">
+			<f:link.external uri="{field.googleLink}" target="_blank">{field.googleLink}</f:link.external>
+		</div>		
+	</f:if>
+	
+	<f:if condition="{field.description}">
+		<f:format.html>{field.description}</f:format.html>
+	</f:if>	
+	</div>
+	
+</f:section>

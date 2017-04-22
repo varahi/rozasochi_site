@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2017-04-20T17:18:32Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="flux.blank" approved="yes">
+			<source>Blank page</source>
+			<target>Пустая страница</target>
+		</trans-unit>
+		<trans-unit id="flux.default" approved="yes">
+			<source>Default page</source>
+			<target>Стандартный шаблон</target>
+		</trans-unit>
+		<trans-unit id="flux.default.description" approved="yes">
+			<source>Default page</source>
+			<target>Стандартный шаблон для всех страниц</target>
+		</trans-unit>
+		<trans-unit id="flux.singleobject" approved="yes">
+			<source>Single object page</source>
+			<target>Страница для отображения объекта</target>
+		</trans-unit>
+		<trans-unit id="flux.singleobject.description" approved="yes">
+			<source>Single object page</source>
+			<target>Страница отображения объекта</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

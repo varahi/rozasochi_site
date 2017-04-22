@@ -1,0 +1,198 @@
+
+
+/* Mmenu */
+a.mm-title {
+  color: #0255a5 !important;
+  font-size: 16px;
+  font-family: Arial;
+}
+.mm-menu .mm-btn::after, .mm-menu .mm-btn::before {
+  border-color: #0255a5 !important;
+}
+em.mm-counter {
+  color: #333 !important;
+}
+.mm-menu .mm-listview > li .mm-arrow::after, .mm-menu .mm-listview > li .mm-next::after {
+  border-color: #0255a5 !important;
+}
+.mm-listview > li:not(.mm-divider)::after {
+  content: '';
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #0255a5;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 20px;
+}
+.mm-listview > li, .mm-listview > li .mm-next, .mm-listview > li .mm-next::before, .mm-listview > li::after {
+  border-color: #0255a5;
+}
+.mm-navbar {
+  border-color: #0255a5;
+}
+.mm-navbar-bottom {
+  border: none;
+}
+.mm-listview > li > a, .mm-listview > li > span {
+  color: #333;
+}
+.mm-arrow::after, .mm-next::after {
+    border-top: none;
+    border-left: none;
+    right: 23px;
+    color: #0255a5;
+}
+.mm-listview .mm-next {
+     color: #0255a5; 
+}
+
+/* Mobile menu toggle button */
+
+.main-menu-btn {
+  float: right;
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  text-indent: 29px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
+  border: 1px solid red;
+}
+
+/* hamburger icon */
+
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  height: 2px;
+  width: 24px;
+  background: #fff;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.main-menu-btn-icon:before {
+  content: '';
+  top: -7px;
+  left: 0;
+}
+
+.main-menu-btn-icon:after {
+  content: '';
+  top: 7px;
+  left: 0;
+}
+
+
+/* x icon */
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+  height: 0;
+  background: transparent;
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* hide menu state checkbox (keep it visible to screen readers) */
+
+#main-menu-state {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+/* hide the menu in mobile view */
+
+#main-menu-state:not(:checked) ~ #main-menu {
+  display: none;
+}
+
+#main-menu-state:checked ~ #main-menu {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  /* hide the button in desktop view */
+  .main-menu-btn {
+    position: absolute;
+    top: -99999px;
+  }
+  /* always show the menu in desktop view */
+  #main-menu-state:not(:checked) ~ #main-menu {
+    display: block;
+  }
+}
+
+.anchor-menu {
+	max-height: 60px;
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+	width: 100%;
+	background: #fff;
+	opacity: 0.9;
+}
+.anchor-menu ul li {
+	display: inline-block;
+	width: 19.5%;
+}
+.anchor-menu ul li a {
+	display: block;
+	font-size: 0;
+	padding: 30px 0 0 0;
+	position: relative;
+	top: 10px;
+}
+.anchor-menu ul li a.back-link {
+	background:transparent url(../Images/Icons/icon-prev2.png) no-repeat 50% 10px;		
+}
+.anchor-menu ul li a.flag {
+	background:transparent url(../Images/Icons/icon-flag1.png) no-repeat 50% 10px;		
+}
+.anchor-menu ul li a.tour-3d {
+	background:transparent url(../Images/Icons/icon-3d.png) no-repeat 50% 10px;		
+}
+.anchor-menu ul li a.gallery-camera {
+	background:transparent url(../Images/Icons/icon-camera.png) no-repeat 50% 10px;		
+}
+.anchor-menu ul li a.additional-info {
+	background:transparent url(../Images/Icons/icon-p.png) no-repeat 50% 10px;		
+}
+
+.nav_up-single {
+	/*bottom: 120px !important;*/
+	  bottom:70px !important;
+}
+.nav_down-single {
+	  bottom:80px !important;
+}
+.back-link a {
+	font-size: 0;
+}

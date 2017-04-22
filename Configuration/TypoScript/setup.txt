@@ -1,0 +1,30 @@
+plugin.tx_rozasochisite {
+	view {
+		templateRootPaths.0 = {$plugin.tx_rozasochisite.view.templateRootPaths.0}
+		partialRootPaths.0 = {$plugin.tx_rozasochisite.view.partialRootPaths.0}
+		layoutRootPaths.0 = {$plugin.tx_rozasochisite.view.layoutRootPaths.0}
+	}
+	#By default the following settings only will have relevance if you have fluidcontent_core extension loaded
+	settings{
+		container {
+			types {
+				default = div
+				Example = div
+			}
+		}
+	}
+}
+
+config.contentObjectExceptionHandler = 0
+
+lib.fluidContent.templateRootPaths.10 = typo3conf/ext/rozasochi_site/Resources/Private/Templates/Extensions/fluid_styled_content/Templates/
+lib.fluidContent.partialRootPaths.10 = typo3conf/ext/rozasochi_site/Resources/Private/Templates/Extensions/fluid_styled_content/Partials/
+lib.fluidContent.layoutRootPaths.10 = typo3conf/ext/rozasochi_site/Resources/Private/Templates/Extensions/fluid_styled_content/Layouts/
+
+
+<INCLUDE_TYPOSCRIPT: source="FILE: typo3conf/ext/rozasochi_site/Configuration/TypoScript/system/config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: typo3conf/ext/rozasochi_site/Configuration/TypoScript/system/libs.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: typo3conf/ext/rozasochi_site/Configuration/TypoScript/system/navigation.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: typo3conf/ext/rozasochi_site/Configuration/TypoScript/system/overrides.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: typo3conf/ext/rozasochi_site/Configuration/TypoScript/system/resources.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE: typo3conf/ext/rozasochi_site/Configuration/TypoScript/system/tt_content.ts">

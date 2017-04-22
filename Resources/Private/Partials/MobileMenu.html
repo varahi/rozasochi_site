@@ -1,0 +1,23 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+    <v:page.menu>
+    	<nav id="menu">
+    	<ul>
+        <f:for each="{menu}" as="item">
+            <li>
+            <f:link.page pageUid="{item.uid}" title="{item.linktext}">{item.linktext}</f:link.page>       	
+            <f:if condition="{item.show_submenu}">
+            	<ul>
+                <v:page.menu pageUid="{item.uid}">
+                    <f:for each="{menu}" as="subItem">
+                        <li>
+                        	<f:link.page pageUid="{subItem.uid}" title="{subItem.linktext}">{subItem.linktext}</f:link.page>
+                       	</li>
+                    </f:for>
+                </v:page.menu>
+              </ul>  
+            </f:if>  
+            </li>         	
+        </f:for>
+      </ul>
+      </nav> 
+    </v:page.menu>

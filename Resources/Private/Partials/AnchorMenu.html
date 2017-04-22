@@ -1,0 +1,22 @@
+<div class="anchor-menu">
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li>
+					<f:if condition="{page.history_back}">
+						<f:then>
+							<f:link.page class="back-link" pageUid="{page.history_back}">Back</f:link.page>
+						</f:then>
+						<f:else>
+							<a class="back-link" href="javascript:history.back();"></a>		
+						</f:else>
+					</f:if>					
+				</li>				
+				<li><a data-scroll href="#flag-map" class="flag smoothScroll">Map</a></li>
+				<li><a data-scroll href="#tour-3d" class="tour-3d smoothScroll">3D</a></li>
+				<li><a data-scroll href="#gallery-camera" class="gallery-camera smoothScroll">Camera</a></li>
+				<li><a data-scroll href="#additional-info" class="additional-info smoothScroll">Info</a></li>
+			</ul>
+		</div>			
+	</div>
+</div>

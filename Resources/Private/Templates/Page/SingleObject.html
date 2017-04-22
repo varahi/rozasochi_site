@@ -1,0 +1,37 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+	xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers">
+
+	<f:layout name="SingleObject" />
+
+	<f:section name="Configuration">
+		<flux:form id="singleobject">
+		</flux:form>
+		<flux:grid>
+			<flux:grid.row>
+				<flux:grid.column colPos="0" colspan="4" name="main" label="{f:translate(key: 'flux.content_area', extensionName: 'rozasochi_site')}" />
+			</flux:grid.row>
+		</flux:grid>
+	</f:section>
+
+	<f:section name="Main">					
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12 single-object">
+				<div class="back-link">
+					<f:if condition="{page.history_back}">
+						<f:then>
+							<f:link.page pageUid="{page.history_back}">Back</f:link.page>
+						</f:then>
+						<f:else>
+							<a href="javascript:history.back();"></a>		
+						</f:else>
+					</f:if>				
+				</div>
+				<v:content.render column="0" />		
+			</div>
+			<!-- <div class="col-md-0 col-sm-0 col-xs-1 _col-xs-offset-12 _hidden-lg _hidden-md _hidden-sm _visible-xs _xs-rightcol">						
+			</div> -->
+		</div>
+	</f:section>
+</div>

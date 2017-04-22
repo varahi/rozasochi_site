@@ -1,0 +1,114 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.logo {
+		text-align: center;
+		max-width: 200px;
+	
+	.csc-textpic-imagerow figure img {
+		width: 100%;
+		height: auto;
+	}
+	.navbar-default .navbar-collapse, 
+	.navbar-default .navbar-form,
+	.navbar-collapse {
+		border-color: #ff0000 !important;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.logo {
+		float: left;
+	}
+	.menu {
+		width: 100%;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fff !important;
+	}
+	.navbar-header {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-top: -45px;
+		float: right;
+	}	
+	.anchor-menu ul li {
+			width: 19%;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 399px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+	.menu {
+		width: 100% !important;
+		float: none !important;
+	}
+	.logo img {
+		width: 100% !important;
+		max-width: 220px !important;
+		height: auto;
+	}
+	.logo {
+		width: 100% !important;
+		float: none !important;
+	}
+	.navbar-header {
+		margin-top: -42px;
+	}	
+	.anchor-menu ul li {
+			width: 18%;
+	}	
+        
+}

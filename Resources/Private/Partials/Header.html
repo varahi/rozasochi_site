@@ -1,0 +1,18 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<div class="container header">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-6 logo">
+      <f:cObject typoscriptObjectPath="lib.logo" />     
+    </div>
+    <div class="col-md-9 col-sm-6 col-xs-6 menu">
+			<f:render partial="Navbar" />
+    </div>
+  </div>
+  <div class="row">
+  	<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-6 col-sm-offset-2 search-form">
+  		<f:cObject typoscriptObjectPath="lib.searchForm" />	
+  	</div>
+  </div>
+</div>
+<div class="clear"></div>  

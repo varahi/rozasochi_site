@@ -1,0 +1,22 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+	xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers">
+
+	<f:layout name="Blank" />
+
+	<f:section name="Configuration">
+		<flux:form id="blank">
+		</flux:form>
+		<flux:grid>
+			<flux:grid.row>
+				<flux:grid.column colPos="0" colspan="4" name="main" 
+				label="{f:translate(key: 'flux.content_area', extensionName: 'rozasochi_site')}" />
+			</flux:grid.row>
+		</flux:grid>
+	</f:section>
+
+	<f:section name="Main">
+		<v:content.render column="0" />		
+	</f:section>
+</div>

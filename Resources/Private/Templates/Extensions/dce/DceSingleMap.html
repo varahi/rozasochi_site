@@ -1,0 +1,87 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+	<!-- <div class="row"> 
+		<div class="col-md-8"> 
+			<f:if condition="{field.title}">
+				<h1>{field.title}</h1>
+			</f:if>
+			
+			<f:if condition="{field.category}">
+				<h2>{field.category}</h2>
+			</f:if>
+								 
+			<f:if condition="{field.description}">
+				<div class="object-description"> 
+					<f:format.html>{field.description}</f:format.html>
+				</div>			
+			</f:if>				 
+
+		</div>			 
+		<div class="col-md-4"> </div>
+	</div> -->
+
+<div id="map-canvas" class="osm-map" style="min-height: {field.minHeight}px;"></div>
+
+<script type="text/javascript">
+	google.maps.event.addDomListener(window, 'load', function() {
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+      zoom: <f:format.htmlentitiesDecode>{field.mapZoom}</f:format.htmlentitiesDecode>,
+      center: new google.maps.LatLng(<f:format.htmlentitiesDecode>{field.lat},{field.lng}</f:format.htmlentitiesDecode>),
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      scaleControl: false,
+      scrollwheel: false,
+      streetViewControl: false
+    });	
+	
+    // Задаем слой с OSM
+    var openStreet = new google.maps.ImageMapType({
+      getTileUrl: function(ll, z) {
+      var X = ll.x % (1 << z);  // wrap
+      return "http://tile.openstreetmap.org/" + z + "/" + X + "/" + ll.y + ".png";
+      },
+      tileSize: new google.maps.Size(256, 256),
+      isPng: true,
+      maxZoom: 20,
+      name: "OSM",
+      alt: "Open Streetmap"
+    }); 
+ 
+    //Добавляем слои к карте
+    map.mapTypes.set('osm', openStreet);
+    map.setMapTypeId('osm');
+ 
+    map.setOptions({
+      mapTypeControlOptions: {
+      mapTypeIds: [
+      ],
+      }
+    });	
+
+    var infoWindow = new google.maps.InfoWindow;
+
+    var onMarkerClick = function() {
+      var marker = this;
+      var latLng = marker.getPosition();
+      infoWindow.setContent(marker.content);
+      infoWindow.open(map, marker);
+    };
+    google.maps.event.addListener(map, 'click', function() {
+      infoWindow.close();
+    });
+    
+		var marker = new google.maps.Marker({
+    map: map,        
+  	content: '<f:format.htmlentitiesDecode><h3>{field.title}</h3></f:format.htmlentitiesDecode>' +
+  	'<f:format.htmlentitiesDecode>{field.description}</f:format.htmlentitiesDecode>' +
+  	'<f:image src="{object.image.originalResource.publicUrl}" width="100m" id="main-img" /><div class="clear"></div>' +
+		'{field.category}' +
+  	'',
+  	position: new google.maps.LatLng(<f:format.htmlentitiesDecode>{field.lat},{field.lng}</f:format.htmlentitiesDecode>)
+    }); 
+    google.maps.event.addListener(marker, 'click', onMarkerClick); 
+  });
+</script>
+
+</f:section>

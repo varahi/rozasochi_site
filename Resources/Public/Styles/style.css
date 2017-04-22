@@ -1,0 +1,73 @@
+
+/* Mmenu */
+a.mm-title {
+  color: #0255a5 !important;
+  font-size: 16px;
+  font-family: Arial;
+}
+.mm-menu .mm-btn::after, .mm-menu .mm-btn::before {
+  border-color: #0255a5 !important;
+}
+em.mm-counter {
+  color: #333 !important;
+}
+.mm-menu .mm-listview > li .mm-arrow::after, .mm-menu .mm-listview > li .mm-next::after {
+  border-color: #0255a5 !important;
+}
+.mm-listview > li:not(.mm-divider)::after {
+  content: '';
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #0255a5;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 20px;
+}
+.mm-listview > li, .mm-listview > li .mm-next, .mm-listview > li .mm-next::before, .mm-listview > li::after {
+  border-color: #0255a5;
+}
+.mm-navbar {
+  border-color: #0255a5;
+}
+.mm-navbar-bottom {
+  border: none;
+}
+.mm-listview > li > a, .mm-listview > li > span {
+  color: #333;
+}
+.mm-arrow::after, .mm-next::after {
+    border-top: none;
+    border-left: none;
+    right: 23px;
+    color: #0255a5;
+}
+.mm-listview .mm-next {
+     color: #0255a5; 
+}
+/*
+#sticky-wrapper {
+  height: 0 !important;
+}
+*/
+
+/* Map Style
+-----------------------------------------------------------------------------*/
+
+@-ms-viewport { width: device-width; }
+@media only screen and (min-device-width: 800px) { 
+	html { 
+		/*overflow:hidden; */
+	} 
+}
+* { padding: 0; margin: 0; }
+
+html { height: 100%; }
+body { 
+	height: 100%; 
+/*	overflow:hidden; 
+	background-color:#ffffff; 
+	color:#000000*/
+}
+

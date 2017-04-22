@@ -1,0 +1,47 @@
+plugin.tx_rozasochisite.view {
+	templateRootPaths.0 = EXT:rozasochi_site/Resources/Private/Templates/
+	partialRootPaths.0 = EXT:rozasochi_site/Resources/Private/Partials/
+	layoutRootPaths.0 = EXT:rozasochi_site/Resources/Private/Layouts/
+}
+
+
+template_path = typo3conf/ext/rozasochi_site
+
+# Magnific popup
+plugin.tx_jhmagnificpopup.type.ajax.ajax.cursor = 0
+plugin.tx_jhmagnificpopup.type.ajax.closeOnBgClick = 0
+plugin.tx_jhmagnificpopup.type.ajax.closeBtnInside = 1
+plugin.tx_jhmagnificpopup.type.ajax.disableOn = 1
+plugin.tx_jhmagnificpopup.type.ajax.showCloseBtn = 1
+plugin.tx_jhmagnificpopup.type.ajax.alignTop = 0
+plugin.tx_jhmagnificpopup.type.ajax.modal = 0
+
+styles.content.imgtext.maxW = 1200
+styles.content.imgtext.maxWInText = 0
+styles.content.imgtext.linkWrap.width = 800
+styles.content.loginform.pid = 0
+
+#plugin.tx_news.view.layoutRootPath = fileadmin/templates/Resources/Private/Templates/Ext/news/Resources/Private/Layouts/
+#plugin.tx_news.view.partialRootPath = fileadmin/templates/Resources/Private/Templates/Ext/news/Resources/Private/Partials/
+#plugin.tx_news.view.templateRootPath = fileadmin/templates/Resources/Private/Templates/Ext/news/Resources/Private/Templates/
+
+#Powermail
+
+plugin.tx_powermail.settings.main.pid = 354
+plugin.tx_powermail.settings.main.confirmation = 0
+plugin.tx_powermail.settings.main.optin = 0
+plugin.tx_powermail.settings.main.moresteps = 0
+#plugin.tx_powermail.settings.receiver.default.senderEmail = Webmail user
+#plugin.tx_powermail.settings.receiver.overwrite.senderEmail = webmaster@rozasochi.ru
+plugin.tx_powermail.settings.misc.ajaxSubmit = 0
+
+#plugin.tx_powermail.settings.captcha.image = fileadmin/templates/Resources/Public/Images/captcha_bg.png
+plugin.tx_powermail.settings.captcha.textSize = 22
+plugin.tx_powermail.settings.captcha.textColor = #000000
+plugin.tx_powermail.settings.captcha.textAngle = -2,2
+plugin.tx_powermail.settings.captcha.distanceHor = 5,10
+plugin.tx_powermail.settings.captcha.distanceVer = 28,29
+
+plugin.tx_powermail.view.templateRootPath = typo3conf/ext/rozasochi_site/Resources/Private/Templates/Extensions/tx_powermail/Templates/
+plugin.tx_powermail.view.partialRootPath = typo3conf/ext/rozasochi_site/Resources/Private/Templates/Extensions/tx_powermail/Partials/
+plugin.tx_powermail.view.layoutRootPath = typo3conf/ext/rozasochi_site/Resources/Private/Templates/Extensions/tx_powermail/Layouts/
